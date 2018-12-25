@@ -81,11 +81,7 @@ CMD $STI_SCRIPTS_PATH/usage
 
 FROM registry.access.redhat.com/openshift3/jenkins-slave-base-rhel7
 
-ENV BASH_ENV=/usr/local/bin/scl_enable \
-    ENV=/usr/local/bin/scl_enable \
-    PROMPT_COMMAND=". /usr/local/bin/scl_enable"
 
-COPY contrib/bin/scl_enable /usr/local/bin/scl_enable
 RUN date
 
 USER 1001
